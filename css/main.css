@@ -1,0 +1,205 @@
+body {
+    background: #990000;
+    background: -moz-radial-gradient(center, ellipse cover, #990000 0%, #800000 44%, #660000 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #990000), color-stop(44%, #800000), color-stop(100%, #660000));
+    background: -webkit-radial-gradient(center, ellipse cover, #990000 0%, #800000 44%, #660000 100%);
+    background: -o-radial-gradient(center, ellipse cover, #990000 0%, #800000 44%, #660000 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #990000 0%, #800000 44%, #660000 100%);
+    background: radial-gradient(ellipse at center, #990000 0%, #800000 44%, #660000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990000', endColorstr='#660000', GradientType=1 );
+    color: #FFF;
+    font-family: "Dosis", Helvetica, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+}
+
+header {
+    height:120px;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top:0;
+    z-index:10;
+
+
+}
+header .header-inner {
+    width: 950px;
+    margin: 0 auto;
+    padding:0 ;
+    text-align:left;
+
+}
+
+header #logo {
+    margin-top:9px;
+    display: block;
+    position: absolute;
+}
+
+header .social-icon {
+    float:right;
+    margin-top:10px;
+}
+
+header .main-nav ul{
+    float:right;
+    width: 640;
+    margin-top:30px;
+
+} 
+
+header .main-nav ul li {
+    list-style: none;
+    float: right;
+    margin-left: 20px;
+
+}
+header .main-nav ul a.activate {
+    background: #EE0000;
+    color: #FFF;
+}
+header .main-nav ul a {
+    color: #666;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.main-content {
+    width:100%;
+    position:absolute;
+    top:120px;
+    min-height: 400px;
+}
+.page {
+    position:static;
+    margin-top:140px
+}
+
+.main-content a
+,.main-content a:visited
+,.main-content a:active
+,.main-content a:hover
+{
+    color:#EE0;
+
+}
+.main-content h3{
+    font-size: 32px;
+    letter-spacing:3px;
+    color:yellow;
+}
+
+.main-content h2{
+    font-size: 36px;
+    letter-spacing:3px;
+}
+
+.main-content p,.main-content li,.main-content h4{
+    font-size: 18px;
+}
+.arrow-wrap .arrow-prev {
+    position: relative;
+    margin-top:200px;
+    float:left;
+    z-index:3;
+}
+.arrow-wrap .arrow-next {
+    position: relative;
+    margin-top:200px;
+    float:right;
+    z-index:3;
+}
+
+.maincontent-inner, .arrow-wrap{
+    width: 950px;
+    margin:0 auto;
+}
+
+.slide {
+    position:absolute;
+    list-style:none;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+.slide li{
+    position: absolute;
+    display:none;
+    width:100%;
+}
+.slide li:first-child{
+    position: absolute;
+    display:list-item;
+}
+.slide li .slide-img{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-10;
+    overflow:hidden;
+}
+.slide li .slide-text{
+    position: relative;
+    width:800px;
+    margin:0 auto;
+    margin-top:80px;
+
+}
+
+.slide li .slide-text h1{
+    font-size:40px;
+    letter-spacing:3px;
+}
+
+.slide li .slide-text h2{
+    font-size:25px;
+    letter-spacing:3px;
+    width: 510px;
+
+}
+
+
+footer {
+    position: fixed;
+    bottom:0;
+    z-index:10;
+    width: 100%;
+    background: url('../img/footer_bg.png');
+    color: #999;
+    font-size:13px;
+}
+
+footer .footer-inner {
+    width: 950px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-rel {
+    position: relative;
+    margin-top:20px;
+}
+.pull-right {
+    float:right;
+}
+.pull-left {
+    float:left;
+}
+
+.span2-left {
+    float:left;
+    width:475px;
+}
+.span2-right {
+    float:right;
+    width:460px;
+}
+.clearfix {
+    clear:both;
+
+}
