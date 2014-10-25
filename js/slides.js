@@ -5,7 +5,7 @@ $(function(){
         ,$pager = $('.slide-indicators a')
         ,$slide = $this.children('li')
         ,length = $slide.size()
-        ,waitTime = 5000
+        ,waitTime = 4000
         ,fadeTime = 600
         ,rotate
         ,visibleClass = "slides_on"
@@ -79,14 +79,13 @@ $(function(){
 
         
         $(window).resize(function(){
-            setTimeout(function(){
-            
             var $container = $(".slide"),
                 $img = $(".slide .slide-img img"),
                 est_pic_h = window.innerHeight-120,
                 est_pic_w = window.innerWidth,
                 init = true
                 ;
+           console.log( est_pic_h,est_pic_w);
 
            $container.css({
                 position: 'relative',
@@ -118,7 +117,6 @@ $(function(){
            });
            if(init) init = false;
             
-           },10);
         });
 
         $pager.click(function(e){
@@ -130,6 +128,6 @@ $(function(){
 
         });
 
-            startCycle();
             $(window).trigger('resize');
+            startCycle();
 });

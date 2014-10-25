@@ -1,10 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Lora|Hammersmith+One);
+@import url(http://fonts.googleapis.com/css?family=Oxygen|Raleway);
+@font-face{
+    font-family: "HelveticaLight";
+    src: url('../fonts/helvetica-light.woff');
+}
+
 body {
     background: #333 url('../img/background.png') center 0px no-repeat;
     color: #FFF;
-    font-family: "Lora", Helvetica, Verdana, sans-serif;
+    font-family: "HelveticaLight",  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     letter-spacing: 1px;
-    font-size:14px;
+    font-size:16px;
 }
 
 header {
@@ -54,7 +59,7 @@ header .main-nav ul a.activate {
     color: #FFF;
 }
 header .main-nav ul a {
-    font-family: "Lora", Helvetica, Verdana, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #666;
     font-size:12px;
     letter-spacing:2px;
@@ -70,7 +75,7 @@ header .main-nav ul a {
 }
 .page {
     position:static;
-    margin-top:140px
+    margin-top:170px
 }
 
 .main-content a
@@ -78,22 +83,70 @@ header .main-nav ul a {
 ,.main-content a:active
 ,.main-content a:hover
 {
-    color:#EE0;
+    color: #FFF;
+    font-style:italic;
 
+}
+.main-content a.email{
+    font-style:normal;
 }
 .main-content h3{
     font-size: 32px;
-    letter-spacing:3px;
-    color:#EEEEEE;
+    letter-spacing:2px;
+    font-weight:normal;
 }
 
 .main-content h2{
     font-size: 36px;
-    letter-spacing:3px;
+    letter-spacing:2px;
+    font-weight:bold;
 }
 
-.main-content p,.main-content li,.main-content h4{
-    font-size: 18px;
+.main-content p, .main-content h4, .main-content li{
+    font-size: 22px;
+    line-height: 24px;
+}
+
+#schedule ul{
+    padding:0 150px;
+    list-style:none;
+}
+#schedule li.li-header{
+    font-size:36px;
+    letter-spacing:1px;
+    line-height:36px;
+    padding-bottom:25px;
+}
+#schedule li{
+    font-size:22px;
+    line-height:34px;
+}
+#schedule li>span{
+    font-weight:bold;
+    float:left;
+    width:140px;
+}
+#jobpost ul{
+    padding:0 50px;
+    list-style:disc;
+}
+#jobpost li{
+    padding:20px 0;
+    font-size:18px;
+    line-height:24px;
+}
+#jobpost li>span{
+    font-weight:bold;
+}
+#jobpost .info{
+    padding:0 35px;
+    font-size:18px;
+    line-height:24px;
+    
+}
+
+.main-content section{
+    margin-bottom:90px;
 }
 .arrow-wrap .arrow-prev {
     position: relative;
@@ -111,6 +164,10 @@ header .main-nav ul a {
 .maincontent-inner, .arrow-wrap{
     width: 950px;
     margin:0 auto;
+}
+.slide-wrap{
+    margin:0 !important;
+    padding:0 !important;
 }
 
 .slide {
@@ -141,27 +198,32 @@ header .main-nav ul a {
     position: relative;
     width:900px;
     margin:0 auto;
-    margin-top:40px;
+    margin-top:80px;
 }
 .slide li .slide-text .box{
-    width:55%;
-    padding:1px 5px 1px 15px;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 25px 5px rgba(0,0,0,0.4);
+    width:450px;
+    height:285px;
+    padding:1px 22px;
+    margin:0;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 255 255 25px 5px rgba(255,255,255,0.75);
     border-radius: 3px;
+    color:#000;
 }
 
 .slide li .slide-text h1{
-    font-size:40px;
+    font-size:36px;
     line-height:24px;
-    letter-spacing:3px;
-    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing:2px;
+    font-weight:300;
+    padding-top:15px;
 }
 
 .slide li .slide-text h2{
-    font-size:22px;
-    letter-spacing:3px;
-
+    font-size:19px;
+    letter-spacing:0px;
+    line-height:22px;
+    font-weight:300;
 }
 
 .slide-indicators {
@@ -230,7 +292,7 @@ footer .footer-inner {
 .e-span3 {
     float:left;
     width:33.333%;
-    line-height: 200px;
+    line-height: 300px;
 }
 
 .e-span3 a,.e-span3 a:hover,.e-span3 a:visited {
@@ -242,11 +304,11 @@ footer .footer-inner {
     background:#666;
 }
 .e-box {
-    border: solid 5px #555;
-    border-radius:5px;
+    border: solid 1px #555;
+    border-radius:2px;
     text-align:center;
     vertical-align: middle;
-    margin:30px 10px 50px;
+    margin:30px 2px 0px;
     background: #AAA ;  
     font-size:24px;
 }
